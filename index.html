@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <a href="#" ><img src="logo1.png" class="logo" alt=""></a>
+
+        <div class="fa-sharp fa-solid fa-bars" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="dev.jpg" alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>DEVEN GUPTA</h1>
+            <h2>Software Engineer.</h2>
+            <p>currently I'm focused in learning Reactjs<br>Code is nothing but the true power of technology.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+ 
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="dev2.png" alt="">
+            </div>
+            <div class="about-text">
+                <p>Hello! My name is Deven and i enjoy to create <br>thing live on the
+                    internet . My interst in web<br>
+                    develpoement.I'm also work on android development<br> project in flutter.</p>
+                <div class="information">
+                   
+                    <div class="info-box">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Deven Gupta</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 97658590</span>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>dev007@gmail.com</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Download Cv</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        
+        <div class="skills-container">
+            <div class="bars">
+              
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+              
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>50%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="s1.png" alt="">
+            </div>
+        </div>
+ 
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <span>Recent Work</span>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-img">
+                <img src="w1.png" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="w2.png" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="w3.png" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="w4.png" alt="">
+            </div>
+            <div class="portfolio-img">
+                <img src="w5.jpg" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Create By <a href="">DEV</a> | All Right Reserved.</p>
+    </div>
+ 
+
+</body>
+
+<script>
+    let header = document.querySelector('header');
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+     
+     
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+     
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    }
+</script>
+</html>
